@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Climbing Tracker</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Climbing Tracker</h1>
+
+    <div class="card">
+      <select id="type"></select>
+
+      <div class="row">
+        <input id="hang" placeholder="Hang kg" />
+        <input id="grade" placeholder="Grade" />
+      </div>
+
+      <div class="row">
+        <input id="pullups" placeholder="Pull-ups" />
+        <input id="pain" placeholder="Pain 0-10" />
+      </div>
+
+      <!-- Date input added -->
+      <input type="date" id="date" />
+
+      <div id="tasks"></div>
+      <textarea id="note" placeholder="Notes"></textarea>
+      <button id="addBtn">Add</button>
+    </div>
+
+    <div class="card">
+      <h2>This Week</h2>
+      <div class="week" id="week"></div>
+    </div>
+
+    <div class="card">
+      <h2>Progress</h2>
+      <canvas id="chart"></canvas>
+    </div>
+
+    <div id="sessions"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
